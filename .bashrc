@@ -15,5 +15,9 @@ export PATH
 # User specific aliases and functions
 export EDITOR=vim
 
+# tmux color test
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
