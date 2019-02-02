@@ -16,16 +16,25 @@ set listchars=tab:▶\ ,eol:¬
 set nolist
 
 " change color of whitespace characters
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+" highlight NonText guifg=#4a4a59
+" highlight SpecialKey guifg=#4a4a59
 
 " messing with background color
 " this tells vim there is no escape sequence to use BCE and then vim manually
 " redraws the background
-set t_ut=
+" set t_ut=
 
 " whitespace nonsense
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " set netrw tree as the default
 let g:netrw_liststyle=3
+
+" syntax highlight for C++ up to C++twenty
+" from https://github.com/bfrg/vim-cpp-modern/tree/master/after/syntax
+" but less updated alternative can be found on
+" https://github.com/octol/vim-cpp-enhanced-highlight
+syntax on
+
+" default color
+colorscheme monokai
