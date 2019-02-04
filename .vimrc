@@ -38,3 +38,7 @@ syntax on
 
 " default color
 colorscheme monokai
+
+" pathogen package management
+execute pathogen#infect()
+filetype plugin indent on
