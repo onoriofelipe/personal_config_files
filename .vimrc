@@ -1,3 +1,5 @@
+set nocompatible
+
 " display line numbers
 set number
 
