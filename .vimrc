@@ -30,6 +30,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 " set netrw tree as the default
 let g:netrw_liststyle=3
 
+" set netrw preview window size
+let g:netrw_winsize=20
+
 " syntax highlight for C++ up to C++twenty
 " from https://github.com/bfrg/vim-cpp-modern/tree/master/after/syntax
 " but less updated alternative can be found on
