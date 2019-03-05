@@ -20,6 +20,16 @@ export EDITOR=vim
 alias vi='vimx'
 alias vim='vimx'
 
+# open latest project
+latest_project="docker_compose_hello_world"
+export latest_project
+alias project='cd ~/random_projects/${latest_project} && tmux new-session "vim ; read"'
+
+# kill stray tmux sessions
+# []TODO: make this more sophisticated
+alias tkill='tmux kill-session' 
+#kills first tmux session in order sorted by tmux ls
+
 # tmux color test
 [ -z "$TMUX" ] && export TERM=xterm-256color
 

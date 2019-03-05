@@ -32,8 +32,15 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 " set netrw tree as the default
 let g:netrw_liststyle=3
 
-" set netrw preview window size
-let g:netrw_winsize=20
+" set netrw to preview windows vertically (1) instead of horizontally (0)
+let g:netrw_preview=1
+
+" set net to also open files by splitting vertically instead of reusing window
+let g:netrw_browse_split=2
+
+" set netrw preview window size, dir listing takes 15% of total colums
+" after split
+let g:netrw_winsize=15
 
 " syntax highlight for C++ up to C++twenty
 " from https://github.com/bfrg/vim-cpp-modern/tree/master/after/syntax
