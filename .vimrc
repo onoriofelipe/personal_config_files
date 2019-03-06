@@ -1,5 +1,9 @@
 set nocompatible
 
+" pathogen package management
+execute pathogen#infect()
+filetype plugin indent on
+
 " display line numbers
 set number
 
@@ -28,6 +32,9 @@ set nolist
 
 " whitespace nonsense
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+" customization for javascript files
+autocmd FileType javascript,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" autocmd FileType yaml,yml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " set netrw tree as the default
 let g:netrw_liststyle=3
@@ -42,6 +49,10 @@ let g:netrw_browse_split=2
 " after split
 let g:netrw_winsize=15
 
+" test toggling of netrw
+let g:netrw_usetab=1
+let g:netrw_wiw=10
+
 " syntax highlight for C++ up to C++twenty
 " from https://github.com/bfrg/vim-cpp-modern/tree/master/after/syntax
 " but less updated alternative can be found on
@@ -51,6 +62,3 @@ syntax on
 " default color
 colorscheme monokai
 
-" pathogen package management
-execute pathogen#infect()
-filetype plugin indent on
