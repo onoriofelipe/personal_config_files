@@ -30,6 +30,15 @@ alias project='cd ~/random_projects/${latest_project} && tmux new-session "vim ;
 alias tkill='tmux kill-session' 
 #kills first tmux session in order sorted by tmux ls
 
+# docker compose aliases
+alias dup='docker-compose up'
+alias ddown='docker-compose down'
+
+# config customization aliases
+alias vrc='vim ~/.vimrc'
+alias brc='vim ~/.bashrc'
+alias trc='vim ~/.tmux.conf'
+
 # tmux color test
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
