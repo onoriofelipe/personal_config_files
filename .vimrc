@@ -17,7 +17,7 @@ nnoremap <leader>c :C<CR>
 " resize window to a small fixed-width left strip
 nnoremap <leader><leader> 22<C-w><bar>
 " resize text editor so it has approximately 80 columns limit
-nnoremap <leader>] 83<C-w><bar>
+nnoremap <leader>] 84<C-w><bar>
 " reload ~/.vimrc
 nnoremap <leader>r :source ~/.vimrc <bar> redraw <bar> echo
             \ 'reloaded ~/.vimrc'<CR>
