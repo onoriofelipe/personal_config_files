@@ -44,8 +44,8 @@ set nolist
 " whitespace nonsense
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 " customization for javascript files
-autocmd FileType javascript,yaml,json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-" autocmd FileType yaml,yml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType yaml,json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType javascript setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " set netrw tree as the default
 let g:netrw_liststyle=3
