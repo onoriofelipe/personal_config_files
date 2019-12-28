@@ -1,3 +1,6 @@
+" set encoding otherwise whitespace characters will be messed
+" in some platforms
+set encoding=utf8
 set nocompatible
 
 " pathogen package management
@@ -73,3 +76,11 @@ syntax on
 " default color
 colorscheme monokai
 
+" add current window number for statusline
+if has("statusline")
+ set statusline==W:%{winnr()}=\ %<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+endif
+
+" C++ headerguard macro
+" []reminder to update for crossplatform usage later
+nnoremap <leader>g :r! echo %:t <CR> :-d <CR> :s/\(.*\)\.hpp/#ifndef __\U\1\E_HPP__\r#define __\U\1\E_HPP__\r\r\r\r#endif \/* __\U\1\E_HPP__ *\//g <CR> :normal 2k <CR>
